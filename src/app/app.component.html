@@ -1,0 +1,35 @@
+<div>
+
+    <div>
+        <p>
+            1. Difference between ‘this’ and ‘let’ and when to use what, explain with examples.
+{{thisVsLet}}
+        </p>
+    </div>
+    <div style="margin-bottom: 15px">
+        <p>2.Write a function which accepts an array of strings and returns a map of character to count of the character(including spaces and special characters).</p>
+        <button (click)="countMaxCharacters()">Count Max Characters</button>
+    </div>
+
+    <div style="margin-bottom: 15px">
+        <p>3.Write a function to return all the keys present in an object at any level.</p>
+        <div>{{keys}}</div>
+        <button (click)="getKeys(json)">Display keys</button>
+    </div>
+
+    <div style="margin-bottom: 15px">
+        <p>4.Write a function to reverse every word of a string.</p>
+        <div style="margin-bottom: 15px">
+            <label>Enter Input: </label>
+            <input type="text" #stringInput>
+        </div>
+        <div>{{reverse}}</div>
+        <button style="margin-bottom:15px " (click)="reverseTheString(true,stringInput.value)">Reverse The string using split and reverse</button><br>
+        <button (click)="reverseTheString(false,stringInput.value)">Reverse The string using recursion</button>
+    </div>
+
+    <div style="margin-bottom: 15px">
+        <p>5.Write a function to remove duplicate strings from an array of strings.</p>
+        <button (click)="getUnique()">Press button and see console log using f12</button>
+    </div>
+</div>
